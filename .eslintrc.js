@@ -74,7 +74,7 @@ module.exports = {
             position: 'before',
           },
         ],
-        pathGroupsExcludedImportTypes: ['builtin', 'object'],
+        pathGroupsExcludedImportTypes: ['type'],
       },
     ],
     'import/no-extraneous-dependencies': [

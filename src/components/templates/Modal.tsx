@@ -3,11 +3,11 @@ import { AnimatePresence } from 'framer-motion';
 import ReactFocusLock from 'react-focus-lock';
 import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 import modalContext from '@/contexts/modalContext';
-import type useModal from '@/hooks/useModal';
 import { TRANSITION, VARIANTS } from '@/constants/framerMotion';
-import Backdrop from '../atoms/Backdrop';
-import ModalContainer from './ModalContainer';
 import Portal from './Portal';
+import ModalContainer from './ModalContainer';
+import Backdrop from '../atoms/Backdrop';
+import type useModal from '@/hooks/useModal';
 
 type ModalProps = {
   children: React.ReactNode;

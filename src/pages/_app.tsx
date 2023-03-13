@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { CacheProvider } from '@emotion/react';
-import { ThemeProvider } from '@mui/material/styles';
 import { LazyMotion, domAnimation } from 'framer-motion';
 import { Provider } from 'react-redux';
+import { ThemeProvider } from '@mui/material/styles';
+import wrapper from '@/states/store';
 import createEmotionCache from '@/styles/createEmotionCache';
 import GlobalStyle from '@/styles/GlobalStyle';
 import theme from '@/styles/theme';
-import wrapper from '@/states/store';
-import type { EmotionCache } from '@emotion/cache';
 import type { AppProps } from 'next/app';
+import type { EmotionCache } from '@emotion/cache';
 
 const clientSideEmotionCache = createEmotionCache();
 
